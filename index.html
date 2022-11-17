@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+      <title>Converter</title>
+  </head>
+  <body>
+
+  <header>
+      <div class="margin-from-sides">
+        <nav>
+        <a href="/" class="logo">
+          <img src="./logo.png" />
+      </a>
+      <ul class="link-box">
+        <li class="link open">БАНК</li>
+        <li class="link">БИЗНЕС</li>
+        <li class="link">ИНВЕСТИЦИИ</li>
+        <li class="link">СТРАХОВАНИЕ</li>
+        <li class="link">МОБАЙЛ</li>
+        <li class="link">ПУТЕШЕСТВИЯ</li>
+        <li class="link">РАЗВЛЕЧЕНИЯ</li>
+      </ul>
+      
+        </nav>
+        <button class="login-button">ВОЙТИ</button>
+      </div>
+    </header>
+    <main>
+      <div class="margin-from-sides">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="converter">
+
+          <div class="i-have">
+            <span class="title">У меня есть </span>
+
+
+          <div class="currency-box">
+            <button class="currency active" id="RUB">RUB</button>
+            <button class="currency" id="USD">USD</button>
+            <button class="currency" id="EUR">EUR</button>
+            <button class="currency" id="GBP">GBP</button>
+          </div>
+
+
+            <div class="input">
+              <input type="text" />
+              <span class="info">1 RUB = 0.0135 USD</span>
+            </div>
+          </div>
+
+          <div class="i-want">
+
+            <span class="title">Хочу приобрести</span>
+
+            <div class="currency-box">
+              <button class="currency" id="RUB">RUB</button>
+              <button class="currency active" id="USD">USD</button>
+              <button class="currency" id="EUR">EUR</button>
+              <button class="currency" id="GBP">GBP</button>
+
+            </div>
+          <div class="input">
+
+            <input   type="text"/>
+            <span class="info">1 USD = 73.8896 RUB</span>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <div id="popup" class="popup-wrapper hide">
+      <div class="popup-content">
+      <div class="popup-title">
+      <button type="button" class="popup-close">&times;</button>
+        <h3>Network Error</h3>
+      </div>
+        <div class="popup-body">
+          <p>You are offline</p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
